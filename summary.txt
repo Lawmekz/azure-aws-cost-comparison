@@ -1,0 +1,31 @@
+CLOUD PROVIDER SELECTION SUMMARY
+Azure vs AWS Cost Comparison — Assignment 3
+Student: Lawmekz | Date: June 10, 2026
+
+BUSINESS CONTEXT: Linux-Based Technology Startup
+
+For a Linux-based startup building and hosting a small web application, AWS is the recommended cloud provider based on our cost analysis and broader ecosystem considerations.
+
+COST VERDICT
+
+Our estimates show AWS at $38.39/month versus Azure at $64.80/month for equivalent compute and storage resources. Over a 12-month period, AWS saves approximately $316.92 compared to Azure. For a startup operating on a tight budget, this 40% cost difference is meaningful and directly impacts runway.
+
+WHY AWS WINS FOR A LINUX STARTUP
+
+First, AWS has a stronger pricing model for Linux workloads. The t3.medium instance at $0.0416/hour significantly undercuts Azure's B2ms at $0.083/hour, despite both offering 2 vCPUs. Since Linux is the primary OS for most startups, there is no licensing benefit from Azure's Hybrid Benefit program, which is designed for organizations with existing Windows Server licenses.
+
+Second, AWS offers a larger free tier and more mature tooling for developers. The AWS Free Tier includes 750 hours/month of t2.micro for 12 months, 5 GB of S3 storage, and 15 GB of bandwidth — giving startups room to prototype at zero cost. AWS also has a broader ecosystem of third-party integrations, DevOps tools, and community documentation that Linux developers are accustomed to working with.
+
+Third, AWS Savings Plans provide flexible and deeper discounts. A 1-year Compute Savings Plan reduces the t3.medium cost by up to 66%, bringing the monthly bill to approximately $15, which is extremely competitive for a startup that can commit to even a modest usage level.
+
+WHEN AZURE WOULD BE THE BETTER CHOICE
+
+Azure becomes the stronger option for a Microsoft-centric enterprise. Organizations running Windows Server workloads can apply Azure Hybrid Benefit to eliminate licensing costs entirely, reducing Windows VM pricing to match Linux pricing. Azure also integrates natively with Active Directory, Microsoft 365, and enterprise tools common in large corporations — reducing administrative overhead and total cost of ownership in those environments.
+
+COST-OPTIMIZATION RECOMMENDATIONS
+
+For the Linux startup scenario, two immediate strategies apply: switching from On-Demand to a 1-Year Savings Plan (saving ~$135/year on compute alone), and right-sizing the instance after monitoring real usage, potentially dropping to a t3.small if memory usage stays below 2 GB, saving an additional $183/year.
+
+FINAL RECOMMENDATION
+
+AWS is the right provider for a Linux-based startup prioritizing cost efficiency, developer tooling, and ecosystem flexibility. Azure is the right provider for enterprises with existing Microsoft licensing and infrastructure.
